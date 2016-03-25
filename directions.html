@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grace Student Ministries</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+      <nav class="main-nav" navbar-fixed-top>
+        <ul class="sections">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="directions.html">Directions</a></li>
+    <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+<div class="map">
+
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+    <div style='overflow:hidden;height:440px;width:700px;'>
+      <div id='gmap_canvas' style='height:440px;width:700px;'>
+    </div><div>
+    <small>
+      <a href="http://embedgooglemaps.com">	embed google maps	</a>
+    </small></div>
+
+    <div>
+      <small><a href="http://www.proxysitereviews.com/">proxy sites</a></small>
+    </div>
+    <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+  </div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(42.1446261,-71.05552349999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(42.1446261,-71.05552349999999)});infowindow = new google.maps.InfoWindow({content:'<strong>Grace Church</strong><br>101 Wales avenue Avon, Ma 02322<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+  </script>
+</div>
+<body>
+  <p class="map-info">
+    Grace Church   |   101 Wales Ave   |   Avon, MA 02322
+          781-297-2970   |   info@thatsgrace.org
+  </p>
+</body>
+
+
+  <footer class="second-footer">
+    <p>All rights reserved to Grace Church</p>
+    <a href="#top" class="link">Back to top &raquo;</a>
+  </footer>

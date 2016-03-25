@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grace Student Ministries</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.1.min.js"></script>
+  </head>
+
+
+      <nav class="main-nav" navbar-fixed-top>
+        <ul class="sections">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="directions.html">Directions</a></li>
+    <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+<!-- form -->
+
+
+
+<form id="contact_form" method="POST" v-on:submit.prevent="submitForm" action="//formspree.io/calvinmiddleton7@gmail.com">
+
+  <div class="contact-info">
+
+
+    <label><span>Your Name</span>
+    <input v-model="name" v-on:blur="isValidName" type="text" name="name"></label>
+
+    <label><span>Your Email</span>
+    <input v-model="email" v-on:blur="isValidEmail" type="email" name="email"></label>
+</div>
+
+    <label><span>Message</span>
+    <textarea v-model="message" v-on:blur="isValidMessage" name="message"></textarea></label>
+
+    <input type="submit" value="Send">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.17/vue.min.js"></script>
+    <script src="js/myown.js"></script>
+</form>
+
+
+<footer class="second-footer">
+  <p>All rights reserved to Grace Church</p>
+  <a href="#top" class="link">Back to top &raquo;</a>
+</footer>
+</body>
+</html>
